@@ -1,0 +1,33 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+
+        def appCenterSdkVersion = '1.6.1'
+        compile "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+        compile "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
